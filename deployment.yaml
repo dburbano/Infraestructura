@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: infraestructura1
-        image: sockshead/react-app:latest
+        image: luispemu/react-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: infraestructura2
-        image: sockshead/node-app:latest
+        image: luispemu/node-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
