@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: infraestructura1
 spec:
-  replicas: 2
+  replicas: 1
   selector:
       matchLabels:
         app: infraestructura1
@@ -25,7 +25,7 @@ kind: Deployment
 metadata:
   name: infraestructura2
 spec:
-  replicas: 2
+  replicas: 1
   selector:
       matchLabels:
         app: infraestructura2
