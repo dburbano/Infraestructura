@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: example-ingress
+  name: proxy1
   annotations:
     kubernetes.io/ingress.class: "nginx"
     nginx.ingress.kubernetes.io/add-base-url: "true"
@@ -12,13 +12,13 @@ spec:
       paths:
         - path: /
           backend:
-            serviceName: appweb1-service
+            serviceName: infraestructura1-service
             servicePort: 80
-        - path: /web-application1
+        - path: /aplicacion-web1
           backend:
-            serviceName: appweb1-service
+            serviceName: infraestructura1-service
             servicePort: 80
-        - path: /web-application2
+        - path: /aplicacion-web2
           backend:
-            serviceName: appweb2-service
+            serviceName: infraestructura2-service
             servicePort: 3000

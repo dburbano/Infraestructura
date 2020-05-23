@@ -4,10 +4,10 @@ jobs:
     docker:
       - image: google/cloud-sdk
     environment:
-      - PROJECT_NAME: "Parcial-Infra"
-      - GOOGLE_PROJECT_ID: "parcial-infra"
-      - GOOGLE_COMPUTE_ZONE: "us-central1-c"
-      - GOOGLE_CLUSTER_NAME: "development"
+      - PROJECT_NAME: "infraparcial"
+      - GOOGLE_PROJECT_ID: "	infraparcial"
+      - GOOGLE_COMPUTE_ZONE: "us-central1-a"
+      - GOOGLE_CLUSTER_NAME: "gke-us"
     steps:
       - checkout
       - run: 
@@ -31,10 +31,10 @@ jobs:
     docker:
       - image: google/cloud-sdk
     environment:
-      - PROJECT_NAME: "Parcial-Infra"
-      - GOOGLE_PROJECT_ID: "parcial-infra"
-      - GOOGLE_COMPUTE_ZONE: "us-central1-c"
-      - GOOGLE_CLUSTER_NAME: "production"
+      - PROJECT_NAME: "infraparcial"
+      - GOOGLE_PROJECT_ID: "infraparcial"
+      - GOOGLE_COMPUTE_ZONE: "europe-west1-c"
+      - GOOGLE_CLUSTER_NAME: "gke-eu"
     steps:
       - checkout
       - run: 
